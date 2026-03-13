@@ -6,13 +6,13 @@
 
 #include "helix.dtsi"
 
-    left_encoder: left_encoder {
+left_encoder: left_encoder {
         compatible = "alps,ec11";
         steps = <80>;
 
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH )>;    
         b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH )>;    
-    };
+};
 
 &kscan0 {
     col-gpios
