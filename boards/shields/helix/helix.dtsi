@@ -30,22 +30,6 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)   RC(4,7) RC(4,8) RC(4,9
         >;
     };
 
-    left_encoder: left_encoder {
-        compatible = "alps,ec11";
-        steps = <144>;
-
-        a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH )>;    
-        b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH )>;    
-    };
-
-    right_encoder: right_encoder {
-        compatible = "alps,ec11";
-        steps = <144>;
-
-        a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH )>;    
-        b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH )>;    
-    };
-
 sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
