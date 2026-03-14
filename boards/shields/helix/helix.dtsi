@@ -39,8 +39,8 @@ sensors {
 
 encoders: encoders {
         compatible = "alps,ec11";
-        a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH )>;    
-        b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH )>;    
+        a-gpios = <&pro_micro 12 (GPIO_ACTIVE_HIGH )>;    
+        b-gpios = <&pro_micro 13 (GPIO_ACTIVE_HIGH )>;    
         steps = <80>;
         status = "disabled";
 };
