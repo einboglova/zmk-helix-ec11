@@ -8,14 +8,10 @@
 
 left_encoder: left_encoder {
         compatible = "alps,ec11";
-        steps = <80>;
-
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH )>;    
         b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH )>;    
-};
-
-&left_encoder {
-    status = "okay";
+        steps = <80>;
+        status = "disabled";
 };
 
 &kscan0 {
