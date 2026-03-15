@@ -10,7 +10,6 @@ left_encoder: left_encoder {
         compatible = "alps,ec11";
         steps = <80>;
         status = "okay";
-
         a-gpios = <&gpio1 1 GPIO_PULL_UP>;
         b-gpios = <&gpio1 2 GPIO_PULL_UP>;
 };
